@@ -6,25 +6,42 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
-            Честные отзывы о свадьбах от реальных невест
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Найди проверенных подрядчиков, идеи для торжества и получи поддержку от тех, кто уже прошёл через это
-          </p>
-          <Button 
-            size="lg" 
-            className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
-          >
-            Присоединиться к сообществу
-          </Button>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
+              Честные отзывы о свадьбах от реальных невест
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Найди проверенных подрядчиков, идеи для торжества и получи поддержку от тех, кто уже прошёл через это
+            </p>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+            >
+              Присоединиться к сообществу
+            </Button>
+          </div>
+          <div className="animate-fade-in">
+            <img 
+              src="https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/dd63cfb4-5bb8-4edb-9905-9902e20f7034.jpg" 
+              alt="Невеста с букетом" 
+              className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </section>
 
       <section className="bg-secondary/30 py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in order-2 md:order-1">
+              <img 
+                src="https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/f56ac42e-7981-4346-a26b-0e10d8bf4145.jpg" 
+                alt="Счастливая пара молодожёнов" 
+                className="rounded-2xl shadow-xl w-full h-auto object-cover"
+              />
+            </div>
+            <div className="space-y-12 order-1 md:order-2">
             <div className="space-y-6 animate-fade-in">
               <div className="inline-flex items-center gap-2 text-destructive font-medium">
                 <Icon name="AlertCircle" size={24} />
@@ -71,6 +88,7 @@ const Index = () => {
                   <span>Идеи оформления и конкурсов от реальных свадеб</span>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -131,11 +149,23 @@ const Index = () => {
 
       <section className="bg-secondary/20 py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-12">
-            <div className="space-y-4 animate-fade-in">
-              <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
-                Что говорят наши участницы
-              </h2>
+          <div className="max-w-6xl mx-auto space-y-12">
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+              <div className="space-y-4 animate-fade-in text-center md:text-left">
+                <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+                  Что говорят наши участницы
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Реальные истории от невест, которые нашли своё идеальное решение
+                </p>
+              </div>
+              <div className="animate-fade-in">
+                <img 
+                  src="https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/ab8d53d2-89d0-44ea-8827-22f509e1d082.jpg" 
+                  alt="Сообщество невест" 
+                  className="rounded-2xl shadow-xl w-full h-auto object-cover"
+                />
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
