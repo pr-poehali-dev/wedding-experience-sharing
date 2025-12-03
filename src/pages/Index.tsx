@@ -15,7 +15,7 @@ const Index = () => {
               Устали от рекламы без цен и накрученных отзывов? Вступайте в чат «Свадьба в Воронеже» – здесь такие же пары, как вы, показывают итоговые чеки и делятся честными отзывами
             </p>
             <div className="space-y-4">
-              <div className="p-6 bg-accent/10 rounded-xl border-l-4 border-accent">
+              <div className="p-6 rounded-xl border-l-4 border-accent" style={{ backgroundColor: '#F9F7F8' }}>
                 <p className="text-base md:text-lg text-foreground font-medium">
                   Присоединяйся в Telegram-чат «Свадьба в Воронеже»: реальные чеки, отзывы и идеи от тех, кто готовится к свадьбе в 2026. Бесплатно для новых участников до конца месяца.
                 </p>
