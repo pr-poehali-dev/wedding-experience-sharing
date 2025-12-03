@@ -9,17 +9,27 @@ const Index = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
-              Честные отзывы о свадьбах от реальных невест
+              Готовитесь к свадьбе в Воронеже в 2026 году?
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Найди проверенных подрядчиков, идеи для торжества и получи поддержку от тех, кто уже прошёл через это
+              Устали от рекламы без цен и накрученных отзывов? Вступайте в чат «Свадьба в Воронеже» – здесь такие же пары, как вы, показывают итоговые чеки и делятся честными отзывами
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
-            >
-              Присоединиться к сообществу
-            </Button>
+            <div className="space-y-4">
+              <div className="p-6 bg-accent/10 rounded-xl border-l-4 border-accent">
+                <p className="text-base md:text-lg text-foreground font-medium">
+                  Присоединяйся в Telegram-чат «Свадьба в Воронеже»: реальные чеки, отзывы и идеи от тех, кто готовится к свадьбе в 2026. Бесплатно для новых участников до конца месяца.
+                </p>
+              </div>
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity w-full md:w-auto"
+              >
+                Вступить в чат
+              </Button>
+              <p className="text-sm text-muted-foreground">
+                Бесплатно для новых участников до конца месяца. Без рекламы и спама.
+              </p>
+            </div>
           </div>
           <div className="animate-fade-in">
             <img 
