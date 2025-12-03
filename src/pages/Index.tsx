@@ -1,12 +1,235 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <section className="container mx-auto px-4 py-20 md:py-32">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
+            Честные отзывы о свадьбах от реальных невест
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Найди проверенных подрядчиков, идеи для торжества и получи поддержку от тех, кто уже прошёл через это
+          </p>
+          <Button 
+            size="lg" 
+            className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            Присоединиться к сообществу
+          </Button>
+        </div>
+      </section>
+
+      <section className="bg-secondary/30 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 animate-fade-in">
+              <div className="inline-flex items-center gap-2 text-destructive font-medium">
+                <Icon name="AlertCircle" size={24} />
+                <span>Знакомая проблема?</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
+                Накрученные отзывы и устаревшая информация
+              </h2>
+              <ul className="space-y-4 text-muted-foreground">
+                <li className="flex gap-3">
+                  <Icon name="X" size={20} className="text-destructive mt-1 flex-shrink-0" />
+                  <span>Отзывы на сайтах выглядят шаблонными и неискренними</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="X" size={20} className="text-destructive mt-1 flex-shrink-0" />
+                  <span>Советы в соцсетях противоречивые и непроверенные</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="X" size={20} className="text-destructive mt-1 flex-shrink-0" />
+                  <span>Информация устарела — подрядчики могли измениться</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-6 animate-fade-in">
+              <div className="inline-flex items-center gap-2 text-accent-foreground font-medium">
+                <Icon name="Sparkles" size={24} />
+                <span>Наше решение</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
+                Живое сообщество невест
+              </h2>
+              <ul className="space-y-4 text-muted-foreground">
+                <li className="flex gap-3">
+                  <Icon name="Check" size={20} className="text-accent-foreground mt-1 flex-shrink-0" />
+                  <span>Реальные истории от пар, которые недавно женились</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" size={20} className="text-accent-foreground mt-1 flex-shrink-0" />
+                  <span>Актуальные отзывы «здесь и сейчас» о локациях и подрядчиках</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" size={20} className="text-accent-foreground mt-1 flex-shrink-0" />
+                  <span>Идеи оформления и конкурсов от реальных свадеб</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-12">
+            <div className="space-y-4 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+                Как это работает
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Три простых шага к идеальной свадьбе
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="p-8 space-y-4 bg-card hover:shadow-lg transition-shadow animate-scale-in">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-heading font-bold text-primary-foreground">1</span>
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-foreground">
+                  Присоединись к чату
+                </h3>
+                <p className="text-muted-foreground">
+                  Зарегистрируйся и получи доступ к сообществу невест и молодожёнов
+                </p>
+              </Card>
+
+              <Card className="p-8 space-y-4 bg-card hover:shadow-lg transition-shadow animate-scale-in [animation-delay:100ms]">
+                <div className="w-12 h-12 rounded-full bg-secondary/50 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-heading font-bold text-secondary-foreground">2</span>
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-foreground">
+                  Задавай вопросы
+                </h3>
+                <p className="text-muted-foreground">
+                  Спроси о подрядчиках, локациях, идеях — получи честные ответы от реальных людей
+                </p>
+              </Card>
+
+              <Card className="p-8 space-y-4 bg-card hover:shadow-lg transition-shadow animate-scale-in [animation-delay:200ms]">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-heading font-bold text-accent-foreground">3</span>
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-foreground">
+                  Делись опытом
+                </h3>
+                <p className="text-muted-foreground">
+                  После свадьбы расскажи свою историю и помоги другим невестам
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary/20 py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-12">
+            <div className="space-y-4 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+                Что говорят наши участницы
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="p-8 space-y-4 bg-card text-left animate-fade-in">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <span className="text-xl">👰</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Анна, вышла замуж 2 месяца назад</p>
+                    <p className="text-sm text-muted-foreground">Москва</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  «Благодаря чату нашла фотографа, который действительно понимал наш стиль. Девочки поделились реальными фото с их свадеб — это было бесценно!»
+                </p>
+              </Card>
+
+              <Card className="p-8 space-y-4 bg-card text-left animate-fade-in [animation-delay:100ms]">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center">
+                    <span className="text-xl">💕</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Мария, замужем 3 месяца</p>
+                    <p className="text-sm text-muted-foreground">Санкт-Петербург</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  «Сэкономили кучу времени на поиске локации! Узнала об идеальном месте от девушки, которая праздновала там месяц назад. Всё оказалось именно так, как она описывала.»
+                </p>
+              </Card>
+
+              <Card className="p-8 space-y-4 bg-card text-left animate-fade-in [animation-delay:200ms]">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                    <span className="text-xl">🎉</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Елена, свадьба через месяц</p>
+                    <p className="text-sm text-muted-foreground">Казань</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  «Готовлюсь к свадьбе и каждый день нахожу здесь что-то полезное. Идеи конкурсов, советы по декору, честные отзывы — всё в одном месте!»
+                </p>
+              </Card>
+
+              <Card className="p-8 space-y-4 bg-card text-left animate-fade-in [animation-delay:300ms]">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <span className="text-xl">✨</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Дарья, замужем полгода</p>
+                    <p className="text-sm text-muted-foreground">Екатеринбург</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  «Атмосфера поддержки невероятная! Когда начала паниковать за неделю до свадьбы, девочки успокоили и дали практичные советы. Теперь сама помогаю другим.»
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center space-y-8 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+              Начни планировать свадьбу мечты
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Присоединяйся к сообществу, где невесты делятся реальным опытом и помогают друг другу
+            </p>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+            >
+              Присоединиться бесплатно
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              Регистрация займёт меньше минуты
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-secondary/10 py-12 mt-20">
+        <div className="container mx-auto px-4 text-center text-muted-foreground">
+          <p>© 2024 Сообщество невест. Создано с любовью для идеальных свадеб</p>
+        </div>
+      </footer>
     </div>
   );
 };
