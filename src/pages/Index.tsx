@@ -243,8 +243,12 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/9c2277fb-7346-4906-8374-61f3e0666d5f.jpg)' }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto text-center space-y-8 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
               Начни планировать свадьбу мечты
