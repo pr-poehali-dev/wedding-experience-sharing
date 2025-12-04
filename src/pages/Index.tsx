@@ -5,8 +5,12 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto px-4 py-20 md:py-32 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/8cf4e5fb-6f37-4c43-8e02-7c30b685198f.jpg)' }}
+        />
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
               Готовитесь к свадьбе в Воронеже в 2026 году?
