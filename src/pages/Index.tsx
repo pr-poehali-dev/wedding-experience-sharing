@@ -10,6 +10,8 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center opacity-5"
           style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/8cf4e5fb-6f37-4c43-8e02-7c30b685198f.jpg)' }}
         />
+        <div className="absolute top-10 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
@@ -45,8 +47,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-secondary/30 py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-secondary/30 py-20 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-accent/10 to-transparent" />
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-2xl" />
+        <div className="absolute bottom-10 left-1/4 w-48 h-48 bg-accent/10 rounded-full blur-2xl" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in order-2 md:order-1">
               <img 
@@ -108,8 +113,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute top-1/4 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <div className="space-y-4 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
@@ -173,8 +180,13 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-secondary/20 py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-secondary/20 py-20 relative overflow-hidden">
+        <svg className="absolute top-0 left-0 w-full h-24 text-secondary/30" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C300,80 600,40 900,60 L1200,80 L1200,0 Z" fill="currentColor" />
+        </svg>
+        <div className="absolute -bottom-10 right-1/3 w-56 h-56 bg-primary/5 rounded-full blur-2xl" />
+        <div className="absolute top-20 left-10 w-40 h-40 bg-accent/10 rounded-full blur-xl" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto space-y-12">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
               <div className="space-y-4 animate-fade-in text-center md:text-left">
@@ -264,6 +276,11 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/0d6798cd-7b97-4fc9-9a9d-1e3416171141/files/9c2277fb-7346-4906-8374-61f3e0666d5f.jpg)' }}
         />
+        <div className="absolute top-1/4 right-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <svg className="absolute bottom-0 left-0 w-full h-24 text-primary/5" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,120 C200,80 400,100 600,90 C800,80 1000,100 1200,90 L1200,120 Z" fill="currentColor" />
+        </svg>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto text-center space-y-8 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
